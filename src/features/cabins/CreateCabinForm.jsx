@@ -67,7 +67,6 @@ function CreateCabinForm({ cabinToEdit = {} }) {
         <Input
           type="number"
           id="maxCapacity"
-          disabled={isWorking}
           {...register("maxCapacity", {
             required: "This field is required",
             min: {
