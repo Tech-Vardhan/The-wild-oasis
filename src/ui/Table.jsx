@@ -69,7 +69,6 @@ function Table({ columns, children }) {
     </TableContext.Provider>
   );
 }
-
 function Header({ children }) {
   const { columns } = useContext(TableContext);
   return <StyledHeader columns={columns} as="header">{children}</StyledHeader>;
